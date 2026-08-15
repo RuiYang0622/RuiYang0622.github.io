@@ -1,235 +1,154 @@
-<!-- Generated with Claude -->
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Analytics Portfolio</title>
-
-    <style>
-      /* ============================================================
-       BASIC STYLES — students can tweak colors/fonts here
-       ============================================================ */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #222;
-        background: #f7f7f7;
-        line-height: 1.5;
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-
-      /* ---------- HEADER (photo + name + subheading) ---------- */
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-
-      /* Empty space for photo — replace with your own <img> if you like */
-      .photo {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        background: #ddd;
-        border: 2px dashed #aaa;
-        margin: 0 auto 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 13px;
-      }
-
-      header h1 {
-        font-size: 28px;
-        margin-bottom: 6px;
-      } /* NAME */
-      header p {
-        font-size: 16px;
-        color: #555;
-      } /* EXPERIENCES */
-
-      /* ---------- TABS ---------- */
-      .tabs {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 24px;
-      }
-
-      .tab-button {
-        padding: 10px 22px;
-        border: 1px solid #ccc;
-        background: #fff;
-        cursor: pointer;
-        font-size: 15px;
-        border-radius: 4px;
-      }
-
-      .tab-button.active {
-        background: #2c3e50;
-        color: #fff;
-        border-color: #2c3e50;
-      }
-
-      /* ---------- TAB CONTENT ---------- */
-      .tab-content {
-        display: none;
-      }
-      .tab-content.active {
-        display: block;
-      }
-
-      .panel {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 6px;
-        padding: 24px;
-      }
-
-      /* ---------- PROJECT CARDS (1 x 3 grid) ---------- */
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-      }
-
-      .card {
-        border: 1px solid #eee;
-        border-radius: 6px;
-        overflow: hidden;
-        background: #fff;
-      }
-
-      /* Empty space for project photo */
-      .card-photo {
-        height: 120px;
-        background: #ddd;
-        border-bottom: 1px dashed #aaa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 12px;
-      }
-
-      .card-text {
-        padding: 14px;
-      }
-      .card-text h3 {
-        font-size: 16px;
-        margin-bottom: 6px;
-      }
-      .card-text p {
-        font-size: 14px;
-        color: #555;
-      }
-
-      /* ---------- MOBILE: stack cards vertically ---------- */
-      @media (max-width: 640px) {
-        .cards {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <meta name="description" content="Rui Yang's business and financial analytics portfolio." />
+    <title>Rui Yang | Business &amp; Financial Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
-
   <body>
-    <div class="container">
-      <!-- ============================================================
-         HEADER: photo, name, experiences
-         ============================================================ -->
-      <header>
-        <!-- Replace this div with <img src="your-photo.jpg" class="photo"> -->
-        <div class="photo">Photo</div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Rui Yang home">ry.</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-        <h1>Rui Yang</h1>
-        <p>Business Analyst · Financial Analysis · SQL · Python · Tableau</p>
-      </header>
-
-      <!-- ============================================================
-         TABS
-         ============================================================ -->
-      <div class="tabs">
-        <button class="tab-button active" onclick="showTab('about')">
-          About Me
-        </button>
-        <button class="tab-button" onclick="showTab('projects')">
-          Projects
-        </button>
-      </div>
-
-      <!-- ---------- TAB 1: ABOUT ME ---------- -->
-      <div id="about" class="tab-content active">
-        <div class="panel">
-          <p>
-            I am currently pursuing a Master of Management in Analytics (MMA) at McGill University. I graduated with High Distinction from the University of Toronto with a Bachelor of Commerce, completing a Management Specialist with focuses in Finance and Leadership in Organizations, as well as a Minor in Economics. I also have internship experience in securities and fixed-income research. I am particularly interested in data-driven roles in the financial services industry, where I can apply Python, SQL, Excel, and Tableau to support informed business and investment decisions.
-
-          </p>
+    <main id="main-content">
+      <section id="top" class="hero section-shell" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">Portfolio / 2026</p>
+          <h1 id="hero-title">Hello, I’m<br />Rui Yang.</h1>
         </div>
-      </div>
+        <div class="hero-summary">
+          <p>An analytics professional combining financial knowledge, business judgment, and data-driven problem solving.</p>
+          <a class="text-link" href="#about">Discover my background <span>↘</span></a>
+        </div>
+        <a class="scroll-cue" href="#work" aria-label="Scroll to selected work">↓</a>
+      </section>
 
-      <!-- ---------- TAB 2: PROJECTS ---------- -->
-      <div id="projects" class="tab-content">
-        <div class="cards">
-          <!-- CARD 1 -->
-          <div class="card">
-            <div class="card-photo">Project Image</div>
-            <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
-            </div>
+      <section id="work" class="work section-shell" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Projects</h2>
+          <p>A growing collection of analytics work focused on financial services, business intelligence, and evidence-based decisions.</p>
+        </div>
+
+        <article class="project-row">
+          <div class="project-copy">
+            <p class="project-number">01 / Financial analytics</p>
+            <h3>Financial Services Analytics Project</h3>
+            <p>An upcoming end-to-end analysis translating financial data into clear business findings and actionable recommendations.</p>
+            <ul class="tag-list" aria-label="Project tools"><li>Python</li><li>Excel</li><li>Data Visualization</li></ul>
+            <span class="project-status">Project details coming soon ↗</span>
           </div>
-
-          <!-- CARD 2 -->
-          <div class="card">
-            <div class="card-photo">Project Image</div>
-            <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
-            </div>
+          <div class="project-visual visual-one" role="img" aria-label="Abstract financial analytics dashboard placeholder">
+            <div class="visual-label"><span>FIN / 01</span><span>ANALYSIS</span></div>
+            <div class="chart-line"></div>
+            <div class="visual-metric"><small>Portfolio insight</small><strong>Data → Decision</strong></div>
           </div>
+        </article>
 
-          <!-- CARD 3 -->
-          <div class="card">
-            <div class="card-photo">Project Image</div>
-            <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
-            </div>
+        <article class="project-row">
+          <div class="project-copy">
+            <p class="project-number">02 / Business intelligence</p>
+            <h3>Business Intelligence Dashboard</h3>
+            <p>An interactive dashboard concept designed to communicate trends, performance indicators, and management insights at a glance.</p>
+            <ul class="tag-list" aria-label="Project tools"><li>Tableau</li><li>SQL</li><li>KPI Design</li></ul>
+            <span class="project-status">Project details coming soon ↗</span>
+          </div>
+          <div class="project-visual visual-two" role="img" aria-label="Abstract business intelligence dashboard placeholder">
+            <div class="visual-label"><span>BI / 02</span><span>DASHBOARD</span></div>
+            <div class="bar-chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="visual-metric"><small>Performance view</small><strong>Measure what matters</strong></div>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="project-copy">
+            <p class="project-number">03 / Data management</p>
+            <h3>Database &amp; SQL Analysis</h3>
+            <p>A structured analysis project using relational data, thoughtful queries, and concise reporting to answer business questions.</p>
+            <ul class="tag-list" aria-label="Project tools"><li>SQL</li><li>Data Modeling</li><li>Reporting</li></ul>
+            <span class="project-status">Project details coming soon ↗</span>
+          </div>
+          <div class="project-visual visual-three" role="img" aria-label="Abstract database analysis placeholder">
+            <div class="visual-label"><span>SQL / 03</span><span>DATABASE</span></div>
+            <div class="data-grid" aria-hidden="true"></div>
+            <div class="visual-metric"><small>Structured thinking</small><strong>Question → Query</strong></div>
+          </div>
+        </article>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="section-shell about-grid">
+          <div class="about-intro">
+            <p class="eyebrow">About me</p>
+            <h2 id="about-title">Finance perspective.<br />Analytics mindset.</h2>
+          </div>
+          <div class="portrait" aria-label="Profile photo placeholder">
+            <!-- Replace this SVG with your professional photo when ready. -->
+            <img src="assets/profile-placeholder.svg" alt="Rui Yang profile placeholder" />
+            <span class="portrait-placeholder">RY</span>
+          </div>
+          <div class="about-copy">
+            <p>I am currently pursuing a Master of Management in Analytics (MMA) at McGill University. I graduated with High Distinction from the University of Toronto with a Bachelor of Commerce, completing a Management Specialist with focuses in Finance and Leadership in Organizations, as well as a Minor in Economics.</p>
+            <p>I also have internship experience in securities and fixed-income research. I am particularly interested in data-driven roles in the financial services industry, where I can apply Python, SQL, Excel, and Tableau to support informed business and investment decisions.</p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- ============================================================
-       SIMPLE TAB SWITCHING SCRIPT
-       ============================================================ -->
-    <script>
-      function showTab(id) {
-        // hide all tab contents
-        document.querySelectorAll(".tab-content").forEach(function (el) {
-          el.classList.remove("active");
-        });
-        // remove active state from all buttons
-        document.querySelectorAll(".tab-button").forEach(function (btn) {
-          btn.classList.remove("active");
-        });
-        // show the selected tab + highlight the clicked button
-        document.getElementById(id).classList.add("active");
-        event.target.classList.add("active");
-      }
-    </script>
+      <section class="details section-shell" aria-label="Background details">
+        <article class="detail-block">
+          <p class="detail-label">Career goal</p>
+          <p>To pursue an analytics-focused role in financial services where business knowledge, financial analysis, and data analytics support strategic decisions.</p>
+        </article>
+        <article class="detail-block">
+          <p class="detail-label">Education</p>
+          <div><h3>McGill University</h3><p>Master of Management in Analytics (MMA)</p></div>
+          <div><h3>University of Toronto</h3><p>Bachelor of Commerce — Management Specialist, focuses in Finance and Leadership in Organizations; Minor in Economics</p><p class="accent-note">Graduated with High Distinction</p></div>
+        </article>
+        <article class="detail-block">
+          <p class="detail-label">Experience</p>
+          <div><h3>Securities &amp; Fixed-Income Research</h3><p>Internship experience supporting research, financial analysis, and the communication of market insights.</p></div>
+        </article>
+      </section>
+
+      <section id="skills" class="skills" aria-labelledby="skills-title">
+        <div class="section-shell skills-grid">
+          <div><p class="eyebrow">Toolkit</p><h2 id="skills-title">Skills &amp;<br />capabilities</h2></div>
+          <div class="skill-groups">
+            <div><h3>Technical</h3><p>Python · SQL · Excel · Tableau · Data Visualization</p></div>
+            <div><h3>Business &amp; Finance</h3><p>Financial Analysis · Investment Research · Fixed-Income Research · Business Analytics</p></div>
+            <div><h3>Approach</h3><p>Structured Problem Solving · Data Storytelling · Decision Support</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-shell" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <div class="contact-grid">
+          <h2 id="contact-title">Let’s connect<br />and talk analytics.</h2>
+          <div class="contact-links">
+            <!-- Replace # with your LinkedIn profile URL. -->
+            <a href="#" aria-label="LinkedIn profile link placeholder">LinkedIn <span>↗</span></a>
+            <a href="https://github.com/RuiYang0622" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+            <!-- Replace this address with your professional email. -->
+            <a href="mailto:your-email@example.com">Email <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell"><p>Rui Yang — 2026</p><a href="#top">Back to top ↑</a></footer>
   </body>
 </html>

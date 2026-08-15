@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
+  <title id="title">Rui Yang profile placeholder</title>
+  <desc id="description">A neutral gray placeholder with the initials RY.</desc>
+  <rect width="800" height="1000" fill="#deded9"/>
+  <circle cx="400" cy="390" r="155" fill="#c7c7c1"/>
+  <path d="M145 920c24-207 120-310 255-310s231 103 255 310" fill="#c7c7c1"/>
+  <text x="400" y="950" text-anchor="middle" fill="#777772" font-family="Arial, sans-serif" font-size="44" letter-spacing="10">RY</text>
+</svg>
