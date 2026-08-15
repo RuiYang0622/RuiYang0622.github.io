@@ -1,24 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
-  <title id="title">Alphabet and Meta financial comparison</title>
-  <desc id="desc">A dark financial dashboard comparing profitability and cash flow metrics.</desc>
+  <title id="title">Equity research analysis process</title>
+  <desc id="desc">A neutral process diagram showing research stages without comparative findings or company results.</desc>
   <rect width="960" height="640" fill="#111"/>
-  <text x="54" y="58" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">EQUITY RESEARCH / 01</text>
-  <text x="906" y="58" text-anchor="end" fill="#aaa" font-family="Arial,sans-serif" font-size="14">ALPHABET × META</text>
+  <text x="54" y="58" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">EQUITY RESEARCH / 03</text>
+  <text x="906" y="58" text-anchor="end" fill="#aaa" font-family="Arial,sans-serif" font-size="14">ANALYSIS FRAMEWORK</text>
   <line x1="54" y1="93" x2="906" y2="93" stroke="#444"/>
-  <text x="54" y="153" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="46">Profitability</text>
-  <text x="54" y="198" fill="#777" font-family="Arial,sans-serif" font-size="46">Cash flow · Resilience</text>
-  <text x="54" y="272" fill="#aaa" font-family="Arial,sans-serif" font-size="14">RELATIVE ANALYSIS</text>
-  <rect x="54" y="300" width="340" height="26" fill="#2b447e"/>
-  <rect x="54" y="344" width="276" height="26" fill="#d6d6cf"/>
-  <text x="412" y="320" fill="#aaa" font-family="Arial,sans-serif" font-size="13">ALPHABET</text>
-  <text x="348" y="364" fill="#aaa" font-family="Arial,sans-serif" font-size="13">META</text>
-  <line x1="54" y1="420" x2="906" y2="420" stroke="#444"/>
-  <text x="54" y="463" fill="#888" font-family="Arial,sans-serif" font-size="13">MARGINS</text>
-  <text x="278" y="463" fill="#888" font-family="Arial,sans-serif" font-size="13">ROA / ROE</text>
-  <text x="500" y="463" fill="#888" font-family="Arial,sans-serif" font-size="13">FCFF / FCFE</text>
-  <text x="728" y="463" fill="#888" font-family="Arial,sans-serif" font-size="13">M&amp;A RISK</text>
-  <text x="54" y="535" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="24">Diversified revenue</text>
-  <text x="54" y="570" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="24">supports resilience.</text>
-  <circle cx="820" cy="535" r="54" fill="none" stroke="#d6d6cf" stroke-width="2"/>
-  <circle cx="820" cy="535" r="34" fill="none" stroke="#2b447e" stroke-width="12" stroke-dasharray="150 65" transform="rotate(-90 820 535)"/>
+  <text x="54" y="163" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="48">Equity Research Process</text>
+  <text x="54" y="205" fill="#777" font-family="Arial,sans-serif" font-size="18">Methodology overview · no comparative results shown</text>
+
+  <g stroke="#5a5a57" stroke-width="2" fill="none">
+    <line x1="160" y1="360" x2="270" y2="360"/>
+    <line x1="350" y1="360" x2="460" y2="360"/>
+    <line x1="540" y1="360" x2="650" y2="360"/>
+    <line x1="730" y1="360" x2="840" y2="360"/>
+  </g>
+  <g fill="#d6d6cf">
+    <path d="M265 354l12 6-12 6z"/><path d="M455 354l12 6-12 6z"/>
+    <path d="M645 354l12 6-12 6z"/><path d="M835 354l12 6-12 6z"/>
+  </g>
+
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <circle cx="110" cy="360" r="58" fill="#243b70"/>
+    <text x="110" y="350" fill="#fff" font-size="13">01</text>
+    <text x="110" y="376" fill="#fff" font-size="15">FILINGS</text>
+
+    <circle cx="300" cy="360" r="58" fill="#d6d6cf"/>
+    <text x="300" y="350" fill="#111" font-size="13">02</text>
+    <text x="300" y="376" fill="#111" font-size="15">RETURNS</text>
+
+    <circle cx="490" cy="360" r="58" fill="#d6d6cf"/>
+    <text x="490" y="350" fill="#111" font-size="13">03</text>
+    <text x="490" y="376" fill="#111" font-size="15">CASH FLOW</text>
+
+    <circle cx="680" cy="360" r="58" fill="#d6d6cf"/>
+    <text x="680" y="350" fill="#111" font-size="13">04</text>
+    <text x="680" y="376" fill="#111" font-size="15">RISK</text>
+
+    <circle cx="870" cy="360" r="58" fill="#243b70"/>
+    <text x="870" y="350" fill="#fff" font-size="13">05</text>
+    <text x="870" y="376" fill="#fff" font-size="15">VIEW</text>
+  </g>
+
+  <g fill="#aaa" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">
+    <text x="110" y="448">Annual reports</text>
+    <text x="300" y="448">Margins · ROA · ROE</text>
+    <text x="490" y="448">FCFF · FCFE · CCC</text>
+    <text x="680" y="448">M&amp;A · Integration</text>
+    <text x="870" y="448">Synthesis</text>
+  </g>
+
+  <line x1="54" y1="524" x2="906" y2="524" stroke="#444"/>
+  <text x="54" y="570" fill="#aaa" font-family="Arial,sans-serif" font-size="14">RESEARCH INPUTS</text>
+  <text x="906" y="570" text-anchor="end" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="15">PUBLIC FILINGS · NON-GAAP REVIEW · STRATEGIC CONTEXT</text>
 </svg>

@@ -2,7 +2,7 @@
   <title id="title">Portfolio allocation and annualized return</title>
   <desc id="desc">An allocation graphic showing eighty percent equities, twenty percent bonds, and a 40.43 percent annualized return.</desc>
   <rect width="960" height="640" fill="#111"/>
-  <text x="54" y="58" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">PORTFOLIO / 03</text>
+  <text x="54" y="58" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">PORTFOLIO / 01</text>
   <text x="906" y="58" text-anchor="end" fill="#aaa" font-family="Arial,sans-serif" font-size="14">CAD 1B SIMULATION</text>
   <line x1="54" y1="93" x2="906" y2="93" stroke="#444"/>
   <circle cx="300" cy="336" r="150" fill="none" stroke="#d6d6cf" stroke-width="64"/>
