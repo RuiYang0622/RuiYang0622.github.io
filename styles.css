@@ -29,7 +29,7 @@ button { font: inherit; }
 
 .site-header { min-height: 96px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 20; }
 .logo { font-size: 2rem; line-height: 1; font-weight: 600; text-decoration: none; letter-spacing: -0.08em; }
-.site-nav { display: flex; gap: clamp(1.5rem, 3vw, 3rem); }
+.site-nav { display: flex; gap: clamp(1rem, 2vw, 2.25rem); }
 .site-nav a, .site-footer a { text-decoration: none; font-size: 0.92rem; }
 .site-nav a { position: relative; }
 .site-nav a::after { content: ""; position: absolute; left: 0; bottom: -0.35rem; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 180ms ease; }
@@ -48,17 +48,30 @@ button { font: inherit; }
 .scroll-cue { position: absolute; bottom: 3.5rem; left: 0; font-size: 3.5rem; line-height: 1; text-decoration: none; transition: transform 180ms ease; }
 .scroll-cue:hover { transform: translateY(0.35rem); }
 
-.work { padding-block: 9rem 5rem; }
+.experience { padding-block: 9rem 5rem; }
+.work { padding-block: 8rem 5rem; }
 .section-heading { display: grid; grid-template-columns: 1fr 1fr; column-gap: 3rem; align-items: end; padding-bottom: 5rem; }
 .section-heading .eyebrow { grid-column: 1 / -1; }
 .section-heading h2, .about h2, .skills h2, .contact h2 { font-size: clamp(3.25rem, 6.5vw, 6.8rem); }
 .section-heading > p:last-child { max-width: 31rem; margin: 0 0 0.5rem; color: var(--muted); font-size: 1.1rem; }
+.experience-row { display: grid; grid-template-columns: minmax(13rem, 0.55fr) minmax(28rem, 1.45fr); gap: clamp(3rem, 8vw, 8rem); padding-block: 4.5rem; border-top: 1px solid var(--line); }
+.experience-row:last-child { border-bottom: 1px solid var(--line); }
+.experience-meta p { margin: 0.4rem 0; color: var(--muted); font-size: 0.85rem; }
+.experience-meta .experience-number { margin: 0 0 2rem; color: var(--ink); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.experience-copy { max-width: 47rem; }
+.experience-department { margin: 0 0 0.55rem; color: var(--accent); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.experience-copy h3 { margin: 0; font-size: clamp(1.8rem, 3vw, 3rem); font-weight: 500; line-height: 1.08; letter-spacing: -0.035em; }
+.experience-highlights, .project-highlights { margin: 2rem 0 0; padding: 0; list-style: none; }
+.experience-highlights li, .project-highlights li { position: relative; padding: 0.8rem 0 0.8rem 1.35rem; border-top: 1px solid rgba(189, 189, 183, 0.65); color: var(--muted); }
+.experience-highlights li::before, .project-highlights li::before { content: "↗"; position: absolute; left: 0; color: var(--ink); }
 .project-row { display: grid; grid-template-columns: minmax(17rem, 0.72fr) minmax(25rem, 1.28fr); gap: clamp(3rem, 8vw, 7rem); padding-block: 5rem; border-top: 1px solid var(--line); }
 .project-copy { display: flex; flex-direction: column; align-items: flex-start; }
 .project-number, .detail-label { margin: 0 0 2.2rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
 .project-copy h3, .detail-block h3, .skill-groups h3 { margin: 0; font-weight: 500; }
 .project-copy h3 { font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1.05; }
 .project-copy > p:not(.project-number) { color: var(--muted); max-width: 29rem; }
+.project-highlights { width: 100%; max-width: 31rem; }
+.project-highlights li { font-size: 0.86rem; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 0.45rem; list-style: none; margin: 1.25rem 0 2.5rem; padding: 0; }
 .tag-list li { border: 1px solid var(--line); border-radius: 999px; padding: 0.38rem 0.7rem; font-size: 0.72rem; }
 .project-status { margin-top: auto; border-bottom: 1px solid; padding-bottom: 0.25rem; font-size: 0.78rem; }
@@ -77,6 +90,9 @@ button { font: inherit; }
 .bar-chart i:nth-child(1) { height: 34%; }.bar-chart i:nth-child(2) { height: 68%; }.bar-chart i:nth-child(3) { height: 49%; }.bar-chart i:nth-child(4) { height: 82%; }.bar-chart i:nth-child(5) { height: 63%; }
 .data-grid { align-self: center; height: 180px; background: linear-gradient(#424240 1px, transparent 1px), linear-gradient(90deg, #424240 1px, transparent 1px); background-size: 20% 25%; border: 1px solid #424240; position: relative; }
 .data-grid::after { content: "SELECT  ·  FILTER  ·  JOIN  ·  INSIGHT"; position: absolute; left: 1rem; top: 1rem; font-size: 0.7rem; letter-spacing: 0.12em; }
+.project-image { margin: 0; padding: 0; display: block; min-height: 0; aspect-ratio: 3 / 2; background: #141414; }
+.project-image::after { display: none; }
+.project-image img { width: 100%; height: auto; min-height: 0; object-fit: contain; }
 
 .about { background: var(--white); padding-block: 10rem; }
 .about-grid { display: grid; grid-template-columns: 1.1fr 0.72fr; gap: clamp(4rem, 8vw, 8rem); }
@@ -116,6 +132,7 @@ button { font: inherit; }
   .hero { grid-template-columns: 1fr; gap: 2rem; align-content: start; padding-top: 7rem; }
   .hero-summary { padding-top: 0; }
   .section-heading { grid-template-columns: 1fr; gap: 2rem; }
+  .experience-row { grid-template-columns: 0.45fr 1.55fr; gap: 3rem; }
   .project-row { grid-template-columns: 1fr; }
   .project-copy { min-height: 340px; }
   .about-grid { grid-template-columns: 1fr; }
@@ -138,11 +155,15 @@ button { font: inherit; }
   .hero { min-height: calc(100svh - 76px); padding-top: 5rem; }
   .hero h1 { font-size: clamp(3.65rem, 17vw, 5rem); }
   .scroll-cue { bottom: 2.5rem; font-size: 2.7rem; }
-  .work, .about, .skills, .contact { padding-block: 7rem; }
+  .experience, .work, .about, .skills, .contact { padding-block: 7rem; }
   .section-heading { padding-bottom: 3rem; }
+  .experience-row { grid-template-columns: 1fr; gap: 1.5rem; padding-block: 3.5rem; }
+  .experience-meta .experience-number { margin-bottom: 1rem; }
   .project-row { padding-block: 3.5rem; gap: 2.5rem; }
   .project-copy { min-height: 320px; }
   .project-visual { min-height: 330px; padding: 1.25rem; }
+  .project-image { padding: 0; }
+  .project-image img { min-height: 0; }
   .visual-metric { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   .visual-metric strong { text-align: left; }
   .portrait { min-height: 430px; }
