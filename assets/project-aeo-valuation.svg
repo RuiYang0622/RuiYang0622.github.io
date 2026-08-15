@@ -12,7 +12,7 @@
   </g>
   <polyline points="106,340 221,294 336,258 451,196 600,226 750,176 896,144" fill="none" stroke="#243b70" stroke-width="8"/>
   <circle cx="896" cy="144" r="10" fill="#f4f4ef"/>
-  <text x="594" y="336" fill="#aaa" font-family="Arial,sans-serif" font-size="14">IMPLIED UPSIDE</text>
+  <text x="594" y="336" fill="#aaa" font-family="Arial,sans-serif" font-size="14">IMPLIED UPSIDE · UP TO</text>
   <text x="594" y="423" fill="#f4f4ef" font-family="Arial,sans-serif" font-size="86">147%</text>
   <line x1="54" y1="520" x2="906" y2="520" stroke="#444"/>
   <text x="54" y="561" fill="#aaa" font-family="Arial,sans-serif" font-size="14">FCFF / FCFE</text>
